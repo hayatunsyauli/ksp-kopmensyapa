@@ -1,0 +1,461 @@
+INFO - 2023-05-06 17:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-06 17:49:06 --> mysqli_sql_exception: Column 'jenis_simpanan' cannot be null in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `si...', 0)
+#1 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `si...')
+#2 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `si...')
+#3 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `si...', Array, false)
+#4 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Controllers\Simpanan.php(137): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(934): App\Controllers\Simpanan->prosesPenarikanSimpanan()
+#9 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+#10 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hayatu...')
+#13 {main}
+CRITICAL - 2023-05-06 17:49:06 --> Column 'jenis_simpanan' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `simpanan_detail` (`id_simpanan`, `jumlah_setor`, `no_anggota`, `jenis_simpanan`, `created_at`, `updated_at`) VALUES (:id_simpanan:, :jumlah_setor:, :no_anggota:, :jenis_simpanan:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Simpanan.php(137): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->prosesPenarikanSimpanan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 17:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 17:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-06 18:19:46 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Controllers\Simpanan.php(138): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(934): App\Controllers\Simpanan->prosesPenarikanSimpanan()
+#9 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+#10 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hayatu...')
+#13 {main}
+CRITICAL - 2023-05-06 18:19:46 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `penarikan_simpanan` (`id_simpanan`, `nominal_penarikan`, `created_at`, `updated_at`) VALUES (:id_simpanan:, :nominal_penarikan:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Simpanan.php(138): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->prosesPenarikanSimpanan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:20:35 --> Too few arguments to function App\Controllers\Simpanan::tarikSimpananAnggota(), 0 passed in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Simpanan.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:25:12 --> Too few arguments to function App\Controllers\Simpanan::tarikSimpananAnggota(), 0 passed in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Simpanan.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:25:14 --> Undefined variable: s
+in APPPATH\Views\simpan\tarikSimpanan.php on line 17.
+ 1 APPPATH\Views\simpan\tarikSimpanan.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: s', 'APPPATH\\Views\\simpan\\tarikSimpanan.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\simpan\\tarikSimpanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('simpan/tarikSimpanan', [], true)
+ 5 APPPATH\Controllers\Simpanan.php(129): view('simpan/tarikSimpanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:25:34 --> Undefined variable: s
+in APPPATH\Views\simpan\tarikSimpanan.php on line 17.
+ 1 APPPATH\Views\simpan\tarikSimpanan.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: s', 'APPPATH\\Views\\simpan\\tarikSimpanan.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\simpan\\tarikSimpanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('simpan/tarikSimpanan', [], true)
+ 5 APPPATH\Controllers\Simpanan.php(129): view('simpan/tarikSimpanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:26:07 --> Undefined index: jenis_simpanan
+in APPPATH\Views\simpan\tarikSimpanan.php on line 80.
+ 1 APPPATH\Views\simpan\tarikSimpanan.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jenis_simpanan', 'APPPATH\\Views\\simpan\\tarikSimpanan.php', 80, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\simpan\\tarikSimpanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('simpan/tarikSimpanan', [], true)
+ 5 APPPATH\Controllers\Simpanan.php(129): view('simpan/tarikSimpanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:26:40 --> Undefined index: jenis_simpanan
+in APPPATH\Views\simpan\tarikSimpanan.php on line 80.
+ 1 APPPATH\Views\simpan\tarikSimpanan.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jenis_simpanan', 'APPPATH\\Views\\simpan\\tarikSimpanan.php', 80, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\simpan\\tarikSimpanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('simpan/tarikSimpanan', [], true)
+ 5 APPPATH\Controllers\Simpanan.php(129): view('simpan/tarikSimpanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:26:46 --> Undefined index: jumlah_setor
+in APPPATH\Views\simpan\tarikSimpanan.php on line 81.
+ 1 APPPATH\Views\simpan\tarikSimpanan.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jumlah_setor', 'APPPATH\\Views\\simpan\\tarikSimpanan.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\simpan\\tarikSimpanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('simpan/tarikSimpanan', [], true)
+ 5 APPPATH\Controllers\Simpanan.php(129): view('simpan/tarikSimpanan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-06 18:30:00 --> mysqli_sql_exception: Unknown column '$id_simpanan' in 'where clause' in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM s...', 0)
+#1 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Models\SimpanModel.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Controllers\Simpanan.php(124): App\Models\SimpanModel->getSimpananById('$id_simpanan')
+#5 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('$id_simpanan')
+#6 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+#7 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hayatu...')
+#10 {main}
+CRITICAL - 2023-05-06 18:30:00 --> Unknown column '$id_simpanan' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\SimpanModel.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM simpanan s JOIN anggota a ON s.no_anggota = a.no_anggota where s.id_simpanan=$id_simpanan ')
+ 2 APPPATH\Controllers\Simpanan.php(124): App\Models\SimpanModel->getSimpananById('$id_simpanan')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('$id_simpanan')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:38:54 --> Undefined variable: ambilSimpanannya
+in APPPATH\Controllers\Simpanan.php on line 142.
+ 1 APPPATH\Controllers\Simpanan.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ambilSimpanannya', 'APPPATH\\Controllers\\Simpanan.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->prosesPenarikanSimpanan('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:39:30 --> Undefined variable: db
+in APPPATH\Controllers\Simpanan.php on line 142.
+ 1 APPPATH\Controllers\Simpanan.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Controllers\\Simpanan.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->prosesPenarikanSimpanan('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 18:39:46 --> Illegal string offset 'simpanan_sukarela'
+in APPPATH\Controllers\Simpanan.php on line 144.
+ 1 APPPATH\Controllers\Simpanan.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'simpanan_sukarela\'', 'APPPATH\\Controllers\\Simpanan.php', 144, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->prosesPenarikanSimpanan('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 18:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 18:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 19:43:56 --> Undefined variable: histori_penarikan
+in APPPATH\Views\simpan\rimayatPenarikan.php on line 32.
+ 1 APPPATH\Views\simpan\rimayatPenarikan.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: histori_penarikan', 'APPPATH\\Views\\simpan\\rimayatPenarikan.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\simpan\\rimayatPenarikan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('simpan/rimayatPenarikan', [], true)
+ 5 APPPATH\Controllers\DashboardAnggota.php(120): view('simpan/rimayatPenarikan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 19:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 19:44:39 --> Undefined variable: id_simpanan
+in APPPATH\Controllers\DashboardAnggota.php on line 118.
+ 1 APPPATH\Controllers\DashboardAnggota.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_simpanan', 'APPPATH\\Controllers\\DashboardAnggota.php', 118, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 19:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-06 19:47:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER by ps.tanggal_penarikan DESC' at line 1 in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM s...', 0)
+#1 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Models\SimpanModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Controllers\DashboardAnggota.php(118): App\Models\SimpanModel->historyPenarikan(NULL)
+#5 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+#6 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+#7 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hayatu...')
+#10 {main}
+CRITICAL - 2023-05-06 19:47:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER by ps.tanggal_penarikan DESC' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\SimpanModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM simpanan s JOIN penarikan_simpanan ps ON s.id_simpanan = ps.id_simpanan where s.id_simpanan= ORDER by ps.tanggal_penarikan DESC')
+ 2 APPPATH\Controllers\DashboardAnggota.php(118): App\Models\SimpanModel->historyPenarikan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 19:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 19:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-06 20:32:25 --> mysqli_sql_exception: Unknown column 'simpanan.no_anggota' in 'on clause' in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM s...', 0)
+#1 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Models\SimpanModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Controllers\DashboardAnggota.php(118): App\Models\SimpanModel->historyPenarikan('2023050002')
+#5 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+#6 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+#7 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hayatu...')
+#10 {main}
+CRITICAL - 2023-05-06 20:32:25 --> Unknown column 'simpanan.no_anggota' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\SimpanModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM simpanan s JOIN penarikan_simpanan ps ON s.id_simpanan = ps.id_simpanan  join anggota ON simpanan.no_anggota = anggota.no_anggota where s.id_simpanan=2023050002 ORDER by ps.tanggal_penarikan DESC')
+ 2 APPPATH\Controllers\DashboardAnggota.php(118): App\Models\SimpanModel->historyPenarikan('2023050002')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 20:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 20:33:47 --> Undefined variable: no_anggota
+in APPPATH\Models\SimpanModel.php on line 40.
+ 1 APPPATH\Models\SimpanModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: no_anggota', 'APPPATH\\Models\\SimpanModel.php', 40, [...])
+ 2 APPPATH\Controllers\DashboardAnggota.php(118): App\Models\SimpanModel->historyPenarikan('2023050002')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 20:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 20:34:05 --> Undefined variable: no_anggota
+in APPPATH\Models\SimpanModel.php on line 40.
+ 1 APPPATH\Models\SimpanModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: no_anggota', 'APPPATH\\Models\\SimpanModel.php', 40, [...])
+ 2 APPPATH\Controllers\DashboardAnggota.php(118): App\Models\SimpanModel->historyPenarikan('2023050002')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DashboardAnggota->rimayatPenarikan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAnggota))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 20:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-06 20:37:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER by ps.tanggal_penarikan DESC' at line 1 in C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM s...', 0)
+#1 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Models\SimpanModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\app\Controllers\Simpanan.php(125): App\Models\SimpanModel->historyPenarikan(NULL)
+#5 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+#6 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+#7 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Hayatun syauli\Downloads\Compressed\cikoperasi\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hayatu...')
+#10 {main}
+CRITICAL - 2023-05-06 20:37:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER by ps.tanggal_penarikan DESC' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\SimpanModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM simpanan s JOIN penarikan_simpanan ps ON s.id_simpanan = ps.id_simpanan  join anggota ang ON s.no_anggota = ang.no_anggota where ang.no_anggota= ORDER by ps.tanggal_penarikan DESC')
+ 2 APPPATH\Controllers\Simpanan.php(125): App\Models\SimpanModel->historyPenarikan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 20:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-06 20:37:36 --> Undefined variable: no_anggota
+in APPPATH\Controllers\Simpanan.php on line 125.
+ 1 APPPATH\Controllers\Simpanan.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: no_anggota', 'APPPATH\\Controllers\\Simpanan.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Simpanan->tarikSimpananAnggota('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Simpanan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-05-06 20:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 20:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-06 21:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

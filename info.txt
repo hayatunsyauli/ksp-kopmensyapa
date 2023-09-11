@@ -1,0 +1,16 @@
+php.id
+
+email hayatunsyauli@gmail.com S4uju_123**
+http://kopmensyapa.skom.id/
+
+database uayysz8j_db_koperasi
+username uayysz8j_kopmensyapa
+pass W38(xN-izEwK
+
+
+??
+tagihan bulanan = sekretaris
+input manual/otomatis = bendahara
+excel
+hapus/tutup tambah jns simpanan
+filter rekap kas

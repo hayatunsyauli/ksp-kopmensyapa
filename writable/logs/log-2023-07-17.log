@@ -1,0 +1,990 @@
+INFO - 2023-07-17 05:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 05:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 05:56:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::select_sum()
+in APPPATH\Models\PinjamanModel.php on line 131.
+ 1 APPPATH\Controllers\Bendahara.php(55): App\Models\PinjamanModel->jmlPinjaman()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 05:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 05:58:16 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 05:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 05:58:39 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 05:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 05:59:13 --> number_format(): Argument #1 ($num) must be of type float, array given
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): number_format([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 05:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 05:59:28 --> number_format(): Argument #1 ($num) must be of type float, array given
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): number_format([...], 0)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:00:11 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:01:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\PinjamanModel.php on line 131.
+ 1 APPPATH\Controllers\Bendahara.php(55): App\Models\PinjamanModel->jmlPinjaman()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:01:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::rows()
+in APPPATH\Models\PinjamanModel.php on line 131.
+ 1 APPPATH\Controllers\Bendahara.php(55): App\Models\PinjamanModel->jmlPinjaman()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:03:19 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:03:34 --> Undefined variable $total
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:03:50 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:27:59 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:30:05 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:30:48 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Views\index.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 8 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:31:00 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\index.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 8 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:32:09 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:32:32 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:33:49 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:36:14 --> syntax error, unexpected token "as", expecting ")"
+in APPPATH\Models\PinjamanModel.php on line 131.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\PinjamanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PinjamanModel')
+ 3 APPPATH\Controllers\Bendahara.php(33): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PinjamanModel')
+ 4 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Bendahara->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:36:22 --> syntax error, unexpected single-quoted string "total", expecting ":"
+in APPPATH\Models\PinjamanModel.php on line 131.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\PinjamanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PinjamanModel')
+ 3 APPPATH\Controllers\Bendahara.php(33): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PinjamanModel')
+ 4 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Bendahara->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:36:34 --> Array to string conversion
+in APPPATH\Views\index.php on line 31.
+ 1 APPPATH\Views\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:43:50 --> Undefined array key "kas_debit"
+in APPPATH\Views\index.php on line 33.
+ 1 APPPATH\Views\index.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kas_debit"', 'APPPATH\\Views\\index.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(59): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 06:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 06:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 06:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 06:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 06:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:51:53 --> array_sum(): Argument #1 ($array) must be of type array, int given
+in APPPATH\Views\index.php on line 63.
+ 1 APPPATH\Views\index.php(63): array_sum(1170000)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(60): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 06:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 06:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:58:17 --> Undefined variable $jumlahkas
+in APPPATH\Views\index.php on line 84.
+ 1 APPPATH\Views\index.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlahkas', 'APPPATH\\Views\\index.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(63): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 06:58:36 --> Undefined variable $jumlahkas
+in APPPATH\Views\index.php on line 84.
+ 1 APPPATH\Views\index.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlahkas', 'APPPATH\\Views\\index.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Bendahara.php(63): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Bendahara->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bendahara))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 06:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 07:24:35 --> Undefined property: App\Controllers\Sekretaris::$kasModel
+in APPPATH\Controllers\Sekretaris.php on line 55.
+ 1 APPPATH\Controllers\Sekretaris.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Sekretaris::$kasModel', 'APPPATH\\Controllers\\Sekretaris.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 07:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 07:41:08 --> Undefined variable $jumlahKas
+in APPPATH\Views\anggota\index.php on line 72.
+ 1 APPPATH\Views\anggota\index.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlahKas', 'APPPATH\\Views\\anggota\\index.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anggota\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('anggota/index', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('anggota/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Anggota.php(56): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Anggota->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anggota))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 07:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 07:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:20:14 --> Undefined variable $jasa
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 169.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 169)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:23:54 --> Undefined variable $jasa
+in APPPATH\Views\ketua\daftar-pengajuan.php on line 168.
+ 1 APPPATH\Views\ketua\daftar-pengajuan.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\ketua\\daftar-pengajuan.php', 168)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ketua\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ketua/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('ketua/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Ketua.php(184): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ketua->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ketua))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:24:51 --> Undefined variable $jasa
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 169.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 169)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:25:37 --> Undefined variable $jasa
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 171.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 171)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:26:08 --> Undefined variable $jml_angsuran
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 177.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_angsuran', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:27:49 --> Undefined variable $jasa
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 169.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 169)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:28:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\petugas\profil.php on line 29.
+ 1 APPPATH\Views\petugas\profil.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\petugas\\profil.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\petugas\\profil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('petugas/profil', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('petugas/profil')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Petugas.php(65): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Petugas->profile()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:28:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\petugas\profil.php on line 29.
+ 1 APPPATH\Views\petugas\profil.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\petugas\\profil.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\petugas\\profil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('petugas/profil', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('petugas/profil')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Petugas.php(65): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Petugas->profile()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:40:03 --> Undefined variable $jasa
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 169.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 169)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:41:24 --> Undefined variable $jasa
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 170.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:42:01 --> Undefined variable $jml_angsuran
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 170.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_angsuran', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:43:01 --> Undefined variable $jml_angsuran
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 170.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_angsuran', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:43:59 --> syntax error, unexpected token ";"
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 170.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 3 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 7 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:44:15 --> Undefined variable $jml_angsuran
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 178.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jml_angsuran', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:45:31 --> Undefined variable $jasa
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 170.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\sekretaris\\daftar-pengajuan.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:47:28 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 172.
+ 1 APPPATH\Views\sekretaris\daftar-pengajuan.php(172): number_format('ROOTPATH\\public')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sekretaris\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:47:57 --> Undefined constant "int"
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 145.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 4 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 8 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:48:08 --> syntax error, unexpected identifier "int"
+in APPPATH\Views\sekretaris\daftar-pengajuan.php on line 145.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sekretaris/daftar-pengajuan', [], true)
+ 3 APPPATH\Views\layout\tamplate-admin.php(34): view('sekretaris/daftar-pengajuan')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 7 APPPATH\Controllers\Sekretaris.php(95): view('layout/tamplate-admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sekretaris->daftarPengajuanPinjaman()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sekretaris))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:51:47 --> Undefined variable $jasa
+in APPPATH\Views\ketua\daftar-pengajuan.php on line 168.
+ 1 APPPATH\Views\ketua\daftar-pengajuan.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jasa', 'APPPATH\\Views\\ketua\\daftar-pengajuan.php', 168)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ketua\\daftar-pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ketua/daftar-pengajuan', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('ketua/daftar-pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Ketua.php(184): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ketua->daftarPengajuanPinjaman()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ketua))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 09:54:32 --> Trying to access array offset on value of type null
+in APPPATH\Views\petugas\profil.php on line 29.
+ 1 APPPATH\Views\petugas\profil.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\petugas\\profil.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\petugas\\profil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('petugas/profil', [], true)
+ 5 APPPATH\Views\layout\tamplate-admin.php(34): view('petugas/profil')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\tamplate-admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/tamplate-admin', [], true)
+ 9 APPPATH\Controllers\Petugas.php(65): view('layout/tamplate-admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Petugas->profile()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-07-17 09:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 09:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 10:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
