@@ -72,7 +72,54 @@ class AnggotaModel extends Model{
 	// }
 
 // join input anggota dan simpanan pokok
-	
+
+
+	public function lapTagihan($bln,$thn)
+    {	
+		$query = $this->db->query("
+			SELECT anggota.no_anggota, anggota.nama,
+			       COALESCE(a_sukarela.debet, 0) AS simpanan_sukarela,
+			       COALESCE(a_panjang.angsuran_pembayaran, 0) AS pinjaman_panjang,
+			       COALESCE(a_barang.angsuran_pembayaran, 0) AS pinjaman_barang,
+			       COALESCE(a_wajib.debet, 0) AS simpanan_wajib
+			FROM anggota
+			LEFT JOIN (
+			    SELECT no_anggota, SUM(debet) AS debet
+			    FROM simpanan_detail
+			    WHERE id_jenis_simpanan = 3
+			    AND MONTH(tanggal) = $bln
+			      AND YEAR(tanggal) = $thn
+			      AND sts_setor = 'Otomatis'
+			    GROUP BY no_anggota
+			) a_sukarela ON anggota.no_anggota = a_sukarela.no_anggota
+			LEFT JOIN (
+			    SELECT no_anggota, SUM(angsuran_pembayaran) AS angsuran_pembayaran
+			    FROM angsuran
+			    WHERE id_jenis_pinjaman = 2
+			      AND MONTH(tgl_angsuran) = $bln
+			      AND YEAR(tgl_angsuran) = $thn
+			    GROUP BY no_anggota
+			) a_panjang ON anggota.no_anggota = a_panjang.no_anggota
+			LEFT JOIN (
+			    SELECT no_anggota, SUM(angsuran_pembayaran) AS angsuran_pembayaran
+			    FROM angsuran
+			    WHERE id_jenis_pinjaman = 3
+			      AND MONTH(tgl_angsuran) = $bln
+			      AND YEAR(tgl_angsuran) = $thn
+			    GROUP BY no_anggota
+			) a_barang ON anggota.no_anggota = a_barang.no_anggota
+			LEFT JOIN (
+			    SELECT no_anggota, SUM(debet) AS debet
+			    FROM simpanan_detail
+			    WHERE id_jenis_simpanan = 2
+			    AND MONTH(tanggal) = $bln
+			      AND YEAR(tanggal) = $thn
+			    GROUP BY no_anggota
+			) a_wajib ON anggota.no_anggota = a_wajib.no_anggota;
+			");
+
+       return $query->getResultArray();
+    }
 }
  
 ?>

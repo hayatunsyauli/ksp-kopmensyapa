@@ -8,7 +8,7 @@ class AngsuranModel extends Model
 {
     protected $table         = 'angsuran';
     protected $primaryKey    = 'id_angsuran';
-    protected $allowedFields = ['id_angsuran','id_pinjaman','id_petugas','tgl_angsuran','angsuran_pembayaran','ket'];
+    protected $allowedFields = ['id_angsuran','id_pinjaman','id_petugas','id_jenis_pinjaman','no_anggota','tgl_angsuran','angsuran_pembayaran','ket'];
 
     public function dataAngsuranById($id_pinjaman)
     {

@@ -72,6 +72,9 @@ class Ketua extends BaseController
             'jumlahPinjamanPj' => $this->pinjamanModel->jumlahPinjamanByPanjang(),
             'jumlahPinjamanPd' => $this->pinjamanModel->jumlahPinjamanByPendek(),
             'jumlahPinjamanBkd' => $this->pinjamanModel->jumlahPinjamanByBkd(),
+            'pinjamanPj' => $this->jenisPinjaman->PinjamanByPanjang(),
+            'pinjamanPd' => $this->jenisPinjaman->PinjamanByPendek(),
+            'pinjamanBkd' => $this->jenisPinjaman->PinjamanByBkd(),
             'jumlahSimpanan' => $this->simpanModel->findAll(),
             'jumlahKas' => $this->kasModel->findAll(),
             'jumlahPengajuan' => $this->pengajuanModel->jumlahPengajuan(),
@@ -290,9 +293,10 @@ class Ketua extends BaseController
     {
         $no_anggota = $this->request->getVar('no_anggota');
         $nama = $this->request->getVar('nama');
+
         $this->pengajuanModel->save([
             'id_pengajuan'      => $id_pengajuan,
-            'status_pengajuan'  => 'Diterima',
+            'status_pengajuan'  => '3',
             'tgl_verifikasi'    => date('Y-m-d H:i:s'),
         ]);
 
@@ -307,6 +311,7 @@ class Ketua extends BaseController
             'id_pinjaman' => 'PJM'.date('YmdHis'),
             'no_anggota' => $no_anggota,
             'id_pengajuan' =>  $this->request->getVar('id_pengajuan'),
+            'id_jenis_pinjaman' =>  $this->request->getVar('id_jenis_pinjaman'),
             'status_pinjaman' => 'Belum Lunas',
             'tgl_pinjam' => date('Y-m-d H:i:s'),
             'tgl_jth_tempo' => $tgl_tmp,

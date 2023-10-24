@@ -23,8 +23,14 @@
         <h3 class="card-title"></h3>
 
         <div class="card-tools">
-          <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#kasdebet"><i class="fas fa-plus"></i> Tambah
-          </button>
+              <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#kasdebet"><i class="fas fa-plus"></i>&nbsp; Tambah
+              </button>
+              <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#kasaccount"><i class="fas fa-search"></i>&nbsp; Filter
+              </button>
+              <button type="submit" onclick="printLaporan()" class="btn btn-secondary btn-sm">Print</button>
+
+              <button onClick="window.location.href=window.location.href" class="btn btn-warning btn-sm"><i class="fas fa-redo-alt"></i></button>
+              </button>
         </div>
         <!-- /.card-tools -->
       </div>
@@ -42,70 +48,8 @@
                 echo '</div>';
             } 
         ?>
-
-        <label class="col-xs-2">Filter Bulanan</label>
-        <div class="row mb-3">
-            <div class="col-sm-2">
-                <select name="bulan" id="bulan" class="form-control">
-                    <option value="">Bulan</option>
-                    <?php 
-                    $bln = array(1=>"Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
-                    $mulai = 1;
-                    for ($i=$mulai; $i < $mulai + 12; $i++) { 
-                        echo '<option value="'. $i .'">'.$bln[$i].'</option>';
-                     } ?>
-                </select>
-            </div>
-            <div class="col-sm-2">
-                <select name="tahun" id="tahun" class="form-control">
-                    <option value="">Tahun</option>
-                    <?php 
-                    $mulai = date('Y') - 10;
-                    for ($i=$mulai; $i < $mulai + 11; $i++) { 
-                        echo '<option value="'. $i .'">'. $i .'</option>';
-                     } ?>
-                </select>
-            </div>
-            <div class="col-sm-1">
-                <button type="submit" onclick="viewLapBulanKasKredit()" class="btn btn-info btn-block">View</button>  
-            </div>
-        </div>
-            <!-- 
-            <div class="col-md-3 mb-3">
-                <div>
-                    <select name="jenis_simpanan" id="jenis_simpanan" class="form-control">
-                        <option value="">Jenis Simpanan</option>
-                        < ? php 
-                        foreach ($jnsSimpan as $key => $value) {
-                            echo '<option value="'. $value['id'] .'">'. $value['jenis_simpanan'] .'</option>';
-                        }
-                        ?>
-                    </select>
-                </div>
-            </div>
-             -->
-        <label class="col-xs-2">Filter Tahunan</label>
-        <div class="row mb-3">
-            <div class="col-sm-2">
-                <select name="tahun" id="tahun2" class="form-control">
-                    <option value="">Tahun</option>
-                    <?php 
-                    $mulai = date('Y') - 10;
-                    for ($i=$mulai; $i < $mulai + 11; $i++) { 
-                        echo '<option value="'. $i .'">'. $i .'</option>';
-                     } ?>
-                </select>
-            </div>
-            <div class="col-sm-1">
-                <button type="submit" onclick="viewLapTahunKasKredit()" class="btn btn-info btn-block">View</button>  
-            </div>
-        </div>
-        <div class="row col-sm-1 pb-2">
-            <button type="submit" onclick="printLaporan()" class="btn btn-info btn-sm">Print</button>&nbsp;
-            <button onClick="window.location.href=window.location.href" class="btn btn-warning btn-sm"><i class="fas fa-redo-alt"></i></button>
-        </div>
         <div class="table" id="printarea">
-             <table class="table p-0 table-hover table-bordered" id="example1">
+             <table class="table table-sm table-hover table-bordered" id="example1">
               <thead>
                 <tr>
                     <th>No</th>
@@ -128,7 +72,7 @@
                         <td><?= $value['code_uraian'];?></td>
                         <td><?= $value['ke'];?></td>
                         <td style="text-align: right;">Rp. <?= number_format($value['kas_credit']);?></td>
-                        <td> 
+                        <td class="text-center"> 
                             <button type="button" class="btn btn-xs btn-warning" data-toggle="modal" data-target="#editkredit<?= $value['id_kas'];?>"><i class="fas fa-pen"></i>
                             </button>
                         
@@ -261,6 +205,78 @@
 
     <?php } ?>
    
+<!-- Modal Filter-->
+<div class="modal fade" id="kasaccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Filter Kas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label class="col-xs-12">Filter Bulanan</label>
+                <div class="row mb-3">
+                    <div class="col-sm-4">
+                        <select name="bulan" id="bulan" class="form-control">
+                            <option value="">Bulan</option>
+                            <?php 
+                            $bln = array(1=>"Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+                            $mulai = 1;
+                            for ($i=$mulai; $i < $mulai + 12; $i++) { 
+                                echo '<option value="'. $i .'">'.$bln[$i].'</option>';
+                             } ?>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <select name="tahun" id="tahun" class="form-control">
+                            <option value="">Tahun</option>
+                            <?php 
+                            $mulai = date('Y') - 10;
+                            for ($i=$mulai; $i < $mulai + 11; $i++) { 
+                                echo '<option value="'. $i .'">'. $i .'</option>';
+                             } ?>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" data-dismiss="modal" onclick="viewLapBulanKasKredit()" class="btn btn-info btn-block">View</button>  
+                    </div>
+                </div>
+                    <!-- 
+                    <div class="col-md-3 mb-3">
+                        <div>
+                            <select name="jenis_simpanan" id="jenis_simpanan" class="form-control">
+                                <option value="">Jenis Simpanan</option>
+                                < ? php 
+                                foreach ($jnsSimpan as $key => $value) {
+                                    echo '<option value="'. $value['id'] .'">'. $value['jenis_simpanan'] .'</option>';
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                     -->
+                <label class="col-xs-2">Filter Tahunan</label>
+                <div class="row mb-3">
+                    <div class="col-sm-8">
+                        <select name="tahun" id="tahun2" class="form-control">
+                            <option value="">Tahun</option>
+                            <?php 
+                            $mulai = date('Y') - 10;
+                            for ($i=$mulai; $i < $mulai + 11; $i++) { 
+                                echo '<option value="'. $i .'">'. $i .'</option>';
+                             } ?>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" data-dismiss="modal" onclick="viewLapTahunKasKredit()()" class="btn btn-info btn-block">View</button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <script>
         function viewLapBulanKasKredit(){
             let bulan = $('#bulan').val();

@@ -1,17 +1,3 @@
-<?php 
-  if ($tagihansukarela == null) {
-          $debet[] = 0;
-          $credit[] = 0;
-      }else{
-          foreach ($tagihansukarela as $key => $value):
-            $debet[] = $value['debet']; 
-         endforeach;
-      } 
-     
-    $saldoss = array_sum($debet);
-
-?> 
-
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -39,71 +25,71 @@
                           <th>Nama</th>
                           <th>Simpanan Wajib</th>
                           <th>Simpanan Sukarela</th>
-                          <th>Angsuran Pjm Panjang</th>
-                          <th>Angsuran Pjm Barang</th>
+                          <th>Angsuran Pinjaman Panjang</th>
+                          <th>Angsuran Pinjaman Barang</th>
                           <th>Jumlah</th>
                       </tr>
                     </thead>
                     <tbody>
                       <?php 
                       $no = 1;
-                      foreach ($tagihanwajib as $key => $value) { 
-                            $idAnggota[] = $value['no_anggota'];
-                            $valueArray[] = $value['debet'];
-
-                            // $idTotals = [];
-
-                            // for ($i = 0; $i < count($idAnggota); $i++) {
-                            //     $id = $idAnggota[$i];
-                            //     $value2 = $valueArray[$i] ?? 0; // Menggunakan nilai default 0 jika $valueArray kosong atau null
-
-                            //     if (!isset($idTotals[$id])) {
-                            //         $idTotals[$id] = 0;
-                            //     }
-
-                            //     $idTotals[$id] += $value2;
-
-                            $idTotals = [];
-
-                            for ($i = 0; $i < count($idAnggota); $i++) {
-                                $id = $idAnggota[$i];
-                                $value2 = $valueArray[$i] ?? 0; // Menggunakan nilai default 0 jika $valueArray kosong atau null
-
-                                if (!isset($idTotals[$id])) {
-                                    $idTotals[$id] = 0;
-                                }
-
-                                $idTotals[$id] += $value2;
-                            }
-
-
-                            // Menampilkan total berdasarkan ID
-                            foreach ($idTotals as $id => $total) {
-                               echo "ID: $id, Total: $total\n <br>";
-                            } 
-                            ?>
-                                
+                      foreach ($tagihan as $key => $value) { 
+                                $total = 0;
+                                ?>
                                 <tr>
                                    <td class="text-center"><?= $no++;?></td>
                                     <td><?= $value['no_anggota'];?></td>
-                                    <td><?= $value['nama'];?></td>
-                                    <td class="text-right">Rp <?= number_format($value['debet']);?></td>
-                                    <td>Rp <?= number_format($idTotals);?></td>
-                          <td></td>
-                          <td style="text-align: right;">
-                            </td>
-                          <td style="text-align: right;">
-
-                            </td>
+                                    <td>
+                                      <?= $value['nama'];?> 
+                                    </td>
+                                    <td style="text-align: right;">Rp. 
+                                      <?= number_format($value['simpanan_wajib']);?>
+                                        
+                                      </td>
+                                    <td style="text-align: right;">Rp. 
+                                      <?= number_format($value['simpanan_sukarela']);?>
+                                        
+                                    </td>
+                                    
+                                    <td class="text-right">Rp. 
+                                      <?= number_format($value['pinjaman_panjang']);?>
+                                        
+                                      </td>
+                                    <td class="text-right">Rp. 
+                                      <?= number_format($value['pinjaman_barang']);?>
+                                        
+                                      </td>
+                                    
+                                    <td class="text-right">Rp. 
+                                      <?= number_format($value['pinjaman_barang'] + $value['pinjaman_panjang'] + $value['simpanan_sukarela'] + $value['simpanan_wajib'] );?>
+                                      
+                                        
+                                      </td>
                       </tr>                 
                       <?php } ?>
                       <tr>
-                          <th class="text-center" colspan="5">Total</th>
-                          <th class="text-right"></th>
-                          <th class="text-right"></th>
-                      </tr>
-                      <tr>
-
+                        <?php 
+                        if ($tagihan == null) {
+                            $wajib[] = 0;
+                            $sukarela[] = 0;
+                            $panjang[] = 0;
+                            $barang[] = 0;
+                        }else{
+                            foreach ($tagihan as $value2) {
+                                // $total = count($tagihan);
+                                $wajib[] = $value2['simpanan_wajib'];
+                                $sukarela[] = $value2['simpanan_sukarela'];
+                                $panjang[] = $value2['pinjaman_panjang'];
+                                $barang[] = $value2['pinjaman_barang'];
+                            }
+                        }
+                         ?>
+                          <th class="text-center" colspan="3">Total</th>
+                          <th class="text-right">Rp. <?= number_format(array_sum($wajib));?></th>
+                          <th class="text-right">Rp. <?= number_format(array_sum($sukarela));?></th>
+                          <th class="text-right">Rp. <?= number_format(array_sum($panjang));?></th>
+                          <th class="text-right">Rp. <?= number_format(array_sum($barang));?></th>
+                          <th class="text-right">Rp. <?= number_format(array_sum($wajib) + array_sum($sukarela) + array_sum($panjang) + array_sum($barang));?></th>
                       </tr>
                     </tbody>
                   </table>

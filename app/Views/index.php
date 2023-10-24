@@ -1,17 +1,17 @@
 <div class="container-fluid">
   <?php 
-  if (!empty($dtpetugas['password'])){
-    if ($dtpetugas['password'] == htmlspecialchars(md5(session()->get('id_petugas')))) { ?>
-      <div class="alert alert-danger" role="alert">
-          Password Anda Belum Di Update. <a href="<?php echo base_url() ?>petugas/profile"><b>Klik untuk update password</b></a>
-      </div>
-      
-    <?php
-  }
-     } else {
+    if (!empty($dtpetugas['password'])){
+      if ($dtpetugas['password'] == htmlspecialchars(md5(session()->get('id_petugas')))) { ?>
+        <div class="alert alert-danger" role="alert">
+            Password Anda Belum Di Update. <a href="<?php echo base_url() ?>petugas/profile"><b>Klik untuk update password</b></a>
+        </div>
+        
+      <?php
+    }
+       } else {
 
-    };
-?>
+      };
+  ?>
 </div>
 <div class="col-lg-4 col-6">
 <!-- small box -->
@@ -36,21 +36,21 @@
       <div class="inner">
         <?php 
           if ($jumlahPinjaman == null) {
-              $ttlPinjamanBkd[] = 0;
+              $ttlPinjaman[] = 0;
           }else{
               foreach ($jumlahPinjaman as $key => $value) {
                   $ttlPinjaman[] = $value['jml_angsuran']; 
               }
           } 
           if ($jumlahPinjamanPj == null) {
-              $ttlPinjamanBkd[] = 0;
+              $ttlPinjamanPj[] = 0;
           }else{
               foreach ($jumlahPinjamanPj as $key => $value) {
                 $ttlPinjamanPj[] = $value['jml_angsuran'];
               }
           } 
           if ($jumlahPinjamanPd == null) {
-              $ttlPinjamanBkd[] = 0;
+              $ttlPinjamanPd[] = 0;
           }else{
               foreach ($jumlahPinjamanPd as $key => $value) {
                 $ttlPinjamanPd[] = $value['jml_angsuran']; 
@@ -65,9 +65,9 @@
           }
          ?>
         <h5>Pinjaman</h5>
-        Pjm. J. Panjang : Rp <?= $jumlahPinjamanPj == null ? '0' : number_format(array_sum($ttlPinjamanPj),0);?><br>
-        Pjm. J. Pendek : Rp <?= $jumlahPinjamanPd == null ? '0' : number_format(array_sum($ttlPinjamanPd),0);?><br>
-        Pjm. BKD : Rp <?= $jumlahPinjamanBkd == null ? '0' : number_format(array_sum($ttlPinjamanBkd),0);?>
+        <?= $pinjamanPj['jenis_pinjaman'];?> : Rp <?= $jumlahPinjamanPj == null ? '0' : number_format(array_sum($ttlPinjamanPj),0);?><br>
+        <?= $pinjamanPd['jenis_pinjaman'];?> : Rp <?= $jumlahPinjamanPd == null ? '0' : number_format(array_sum($ttlPinjamanPd),0);?><br>
+        <?= $pinjamanBkd['jenis_pinjaman'];?> : Rp <?= $jumlahPinjamanBkd == null ? '0' : number_format(array_sum($ttlPinjamanBkd),0);?>
         
         <hr>
         <h5>Total : Rp <?= $jumlahPinjaman == null ? '0' : number_format(array_sum($ttlPinjaman),0);?></h3>
@@ -254,7 +254,8 @@
 
 
     <?php 
-/*$myArray = [
+/*
+  $myArray = [
     ["id" => 1, "value" => 5],
     ["id" => 2, "value" => 10],
     ["id" => 1, "value" => 7],
@@ -263,46 +264,47 @@
     ["id" => 5, "value" => 0],
     ["id" => 5, "value" => 4],
     // tambahkan data lainnya di sini...
-];
+  ];
 
-$idTotals = [];
+  $idTotals = [];
 
-foreach ($myArray as $item) {
-    $id = $item["id"];
-    $value = $item["value"];
+  foreach ($myArray as $item) {
+      $id = $item["id"];
+      $value = $item["value"];
 
-    if (!isset($idTotals[$id])) {
-        $idTotals[$id] = 0;
-    }
+      if (!isset($idTotals[$id])) {
+          $idTotals[$id] = 0;
+      }
 
-    $idTotals[$id] += $value;
-}
+      $idTotals[$id] += $value;
+  }
 
-// Menampilkan total berdasarkan ID
-foreach ($idTotals as $id => $total) {
-    echo "ID: $id, Total: $total\n <br>";
-}
+  // Menampilkan total berdasarkan ID
+  foreach ($idTotals as $id => $total) {
+      echo "ID: $id, Total: $total\n <br>";
+  }
 */
-$idArray = [1, 2, 3];
-$valueArray = [5, null, 3];
+/*
+  $idArray = [1, 2, 3];
+  $valueArray = [5, null, 3];
 
-$idTotals = [];
+  $idTotals = [];
 
-for ($i = 0; $i < count($idArray); $i++) {
-    $id = $idArray[$i];
-    $value = $valueArray[$i] ?? 0; // Menggunakan nilai default 0 jika $valueArray kosong atau null
+  for ($i = 0; $i < count($idArray); $i++) {
+      $id = $idArray[$i];
+      $value = $valueArray[$i] ?? 0; // Menggunakan nilai default 0 jika $valueArray kosong atau null
 
-    if (!isset($idTotals[$id])) {
-        $idTotals[$id] = 0;
-    }
+      if (!isset($idTotals[$id])) {
+          $idTotals[$id] = 0;
+      }
 
-    $idTotals[$id] += $value;
-}
+      $idTotals[$id] += $value;
+  }
 
 
-// Menampilkan total berdasarkan ID
-foreach ($idTotals as $id => $total) {
-    echo "ID: $id, Total: $total\n <br>";
-}
-
+  // Menampilkan total berdasarkan ID
+  foreach ($idTotals as $id => $total) {
+      echo "ID: $id, Total: $total\n <br>";
+  }
+*/
  ?>

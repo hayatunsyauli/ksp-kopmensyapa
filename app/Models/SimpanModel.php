@@ -232,6 +232,27 @@ class SimpanModel extends Model{
         return $this->db->table('simpanan')->where('no_anggota',$no_anggota)->get()->getResultArray();
     }
 
+    public function lapTagihan($bln,$thn)
+    {
+        $query = $this->db->query("
+            SELECT
+                s.no_anggota,
+                a.nama, -- Kolom nama anggota dari tabel anggota
+                -- DATE(s.tanggal) AS tanggal_transaksi,
+                SUM(CASE WHEN s.id_jenis_simpanan = 2 THEN s.total_debet ELSE 0 END) AS simpanan_wajib,
+                SUM(CASE WHEN s.id_jenis_simpanan = 3 THEN s.total_debet ELSE 0 END) AS simpanan_sukarela
+            FROM (  
+                SELECT no_anggota, id_jenis_simpanan, SUM(debet) AS total_debet
+                FROM simpanan_detail
+                WHERE sts_setor = 'Otomatis' AND status = 'Debet'
+                    AND MONTH(tanggal) = $bln AND YEAR(tanggal) = $thn 
+                GROUP BY no_anggota, id_jenis_simpanan
+            ) AS s LEFT JOIN anggota a ON s.no_anggota = a.no_anggota
+            GROUP BY a.no_anggota, a.nama_anggota"
+        );
+        return $query->getResultArray();
+    }
+
     public function lapTagihanWajib($bln,$thn)
     {
         return $this->db->table('simpanan_detail')

@@ -882,8 +882,9 @@ class Petugas extends BaseController
         $thn = $this->request->getVar('tahun');
         // $jns = $this->request->getVar('jns');
         $data = [
-            'tagihanwajib' =>$this->simpanModel->lapTagihanWajib($bln,$thn),
-            'tagihansukarela' =>$this->simpanModel->lapTagihanSukarela($bln,$thn),
+            'tagihan' =>$this->anggotaModel->lapTagihan($bln,$thn),
+            // 'tagihanwajib' =>$this->simpanModel->lapTagihanWajib($bln,$thn),
+            // 'tagihansukarela' =>$this->simpanModel->lapTagihanSukarela($bln,$thn),
             'bulan' => $bln .'-'. $thn,
             'judul' => 'Laporan Kas Bulanan',
             'page' => 'laporan/v_lap_tagihan',

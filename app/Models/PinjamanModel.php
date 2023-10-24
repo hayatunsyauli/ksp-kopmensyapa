@@ -8,7 +8,7 @@ class PinjamanModel extends Model
 {
     protected $table         = 'pinjaman';
     protected $primaryKey    = 'id_pinjaman';
-    protected $allowedFields = ['id_pinjaman','no_anggota','id_pengajuan','status_pinjaman','tgl_pinjam','tgl_jth_tempo','jml_pinjaman','jasa','jml_angsuran',];
+    protected $allowedFields = ['id_pinjaman','no_anggota','id_pengajuan','id_jenis_pinjaman','status_pinjaman','tgl_pinjam','tgl_jth_tempo','jml_pinjaman','jasa','jml_angsuran',];
 
     public function getIdPinjamanbyAng($no_anggota)
     {
@@ -175,14 +175,14 @@ class PinjamanModel extends Model
         return $this->db->table('pinjaman')
         ->join(
             'pengajuan_pinjaman', 'pengajuan_pinjaman.id_pengajuan = pinjaman.id_pengajuan'
-        )->where('pinjaman.no_anggota',$no_anggota)->where('pengajuan_pinjaman.id_jenis_pinjaman', 1)->get()->getResultArray();
+        )->where('pinjaman.no_anggota',$no_anggota)->where('pengajuan_pinjaman.id_jenis_pinjaman', 2)->get()->getResultArray();
     }
     public function jumlahPinjamanByAnggotaPendek($no_anggota)
     {
         return $this->db->table('pinjaman')
         ->join(
             'pengajuan_pinjaman', 'pengajuan_pinjaman.id_pengajuan = pinjaman.id_pengajuan'
-        )->where('pinjaman.no_anggota',$no_anggota)->where('pengajuan_pinjaman.id_jenis_pinjaman', 2)->get()->getResultArray();
+        )->where('pinjaman.no_anggota',$no_anggota)->where('pengajuan_pinjaman.id_jenis_pinjaman', 1)->get()->getResultArray();
     }
     public function jumlahPinjamanByAnggotaBkd($no_anggota)
     {
@@ -204,21 +204,24 @@ class PinjamanModel extends Model
         return $this->db->table('pinjaman')
         ->join(
             'pengajuan_pinjaman', 'pengajuan_pinjaman.id_pengajuan = pinjaman.id_pengajuan'
-        )->where('pengajuan_pinjaman.id_jenis_pinjaman', 1)->get()->getResultArray();
+        )->where('pengajuan_pinjaman.id_jenis_pinjaman', 2)
+        ->where('pengajuan_pinjaman.status_pengajuan', 'Diterima')->get()->getResultArray();
     }
     public function jumlahPinjamanByPendek()
     {
         return $this->db->table('pinjaman')
         ->join(
             'pengajuan_pinjaman', 'pengajuan_pinjaman.id_pengajuan = pinjaman.id_pengajuan'
-        )->where('pengajuan_pinjaman.id_jenis_pinjaman', 2)->get()->getResultArray();
+        )->where('pengajuan_pinjaman.id_jenis_pinjaman', 1)
+        ->where('pengajuan_pinjaman.status_pengajuan', 'Diterima')->get()->getResultArray();
     }
     public function jumlahPinjamanByBkd()
     {
         return $this->db->table('pinjaman')
         ->join(
             'pengajuan_pinjaman', 'pengajuan_pinjaman.id_pengajuan = pinjaman.id_pengajuan'
-        )->where('pengajuan_pinjaman.id_jenis_pinjaman', 3)->get()->getResultArray();
+        )->where('pengajuan_pinjaman.id_jenis_pinjaman', 3)
+        ->where('pengajuan_pinjaman.status_pengajuan', 'Diterima')->get()->getResultArray();
     }
 }
 

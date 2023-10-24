@@ -103,7 +103,7 @@
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
-                        <form method="post" action="/ketua/prosesTolakPinjaman/<?= $jp['id_pengajuan'];?>">
+                        <form method="post" action="<?php echo base_url('ketua/prosesTolakPinjaman/'.$jp['id_pengajuan']) ?>">
                             <?= csrf_field();?>
                             <div class="modal-body">
                               <label>Keterangan</label>
@@ -121,7 +121,15 @@
                     <!-- /.modal-dialog -->
                   </div>
                   <!-- /.modal -->
-                
+            <?php endforeach; ?>
+            
+            </tbody>
+        </table>
+      </div>
+  </div>
+</div>
+            <?php foreach ($pengajuan as $jp) : ?>
+
                 <!-- Modal Terima pengajuan Pinjaman-->
                 <div class="modal fade" id="verifikasi<?= $jp['id_pengajuan'];?>">
                     <div class="modal-dialog">
@@ -142,31 +150,33 @@
                         }else{
 
                         }
-                        // $jasa = 0;
-                        // $jml_angsuran = 0;
-                        //     if ($jp['id_jenis_pinjaman'] == '1' && $jp['bsr_pengajuan'] >= 5000000 && $jp['bsr_pengajuan'] <= 10000000 ) {
-                        //         $jasa = $jp['bsr_pengajuan'] *  0.07;
-                        //         $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
-                        //     }else if ($jp['id_jenis_pinjaman'] == '1' && $jp['bsr_pengajuan'] < 5000000) {
-                        //         $jasa = $jp['bsr_pengajuan'] * 0.03;
-                        //         $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
-                        //     }else if ($jp['id_jenis_pinjaman'] == '2' && $jp['bsr_pengajuan'] >= 5000000 && $jp['bsr_pengajuan'] <= 10000000 ) {
-                        //         $jasa = $jp['bsr_pengajuan'] *  0.07;
-                        //         $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
-                        //     }else if ($jp['id_jenis_pinjaman'] == '2' && $jp['bsr_pengajuan'] < 5000000) {
-                        //         $jasa = $jp['bsr_pengajuan'] * 0.05;
-                        //         $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
-                        //     }else if ($jp['id_jenis_pinjaman'] == '3' && $jp['bsr_pengajuan'] >= 5000000 && $jp['bsr_pengajuan'] <= 10000000 ) {
-                        //         $jasa = $jp['bsr_pengajuan'] *  0.07;
-                        //         $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
-                        //     }else if ($jp['id_jenis_pinjaman'] == '3' && $jp['bsr_pengajuan'] < 5000000) {
-                        //         $jasa = $jp['bsr_pengajuan'] * 0.05;
-                        //         $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
-                        //     }else{
+                        /*
+                            $jasa = 0;
+                            $jml_angsuran = 0;
+                                if ($jp['id_jenis_pinjaman'] == '1' && $jp['bsr_pengajuan'] >= 5000000 && $jp['bsr_pengajuan'] <= 10000000 ) {
+                                    $jasa = $jp['bsr_pengajuan'] *  0.07;
+                                    $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
+                                }else if ($jp['id_jenis_pinjaman'] == '1' && $jp['bsr_pengajuan'] < 5000000) {
+                                    $jasa = $jp['bsr_pengajuan'] * 0.03;
+                                    $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
+                                }else if ($jp['id_jenis_pinjaman'] == '2' && $jp['bsr_pengajuan'] >= 5000000 && $jp['bsr_pengajuan'] <= 10000000 ) {
+                                    $jasa = $jp['bsr_pengajuan'] *  0.07;
+                                    $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
+                                }else if ($jp['id_jenis_pinjaman'] == '2' && $jp['bsr_pengajuan'] < 5000000) {
+                                    $jasa = $jp['bsr_pengajuan'] * 0.05;
+                                    $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
+                                }else if ($jp['id_jenis_pinjaman'] == '3' && $jp['bsr_pengajuan'] >= 5000000 && $jp['bsr_pengajuan'] <= 10000000 ) {
+                                    $jasa = $jp['bsr_pengajuan'] *  0.07;
+                                    $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
+                                }else if ($jp['id_jenis_pinjaman'] == '3' && $jp['bsr_pengajuan'] < 5000000) {
+                                    $jasa = $jp['bsr_pengajuan'] * 0.05;
+                                    $jml_angsuran = $jp['bsr_pengajuan'] + $jasa;
+                                }else{
 
-                        //     }   
+                                }   
+                        */
                          ?>
-                        <form method="post" action="/ketua/prosesTerimaPinjaman/<?= $jp['id_pengajuan'];?>">
+                        <form method="post" action="<?php echo base_url('ketua/prosesTerimaPinjaman/'.$jp['id_pengajuan'] ); ?>">
                             <?= csrf_field();?>
                             <div class="modal-body">
                                 <div class="form-group">
@@ -200,6 +210,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="hidden" name="id_jenis_pinjaman" value="<?= $jp['id_jenis_pinjaman'];?>">
                             <input type="hidden" name="id_pengajuan" value="<?= $jp['id_pengajuan'];?>">
                             <input type="hidden" name="bsr_pengajuan" value="<?= $jp['bsr_pengajuan'];?>">
                             <input type="hidden" name="lama_angsuran" value="<?= $jp['lama_angsuran'];?>">
@@ -214,12 +225,7 @@
                       <!-- /.modal-content -->
                     </div>
                     <!-- /.modal-dialog -->
-                  </div>
-                  <!-- /.modal -->
+                </div>
+                <!-- /.modal -->
 
             <?php endforeach; ?>
-            </tbody>
-        </table>
-      </div>
-  </div>
-</div>

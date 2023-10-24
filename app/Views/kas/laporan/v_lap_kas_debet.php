@@ -47,9 +47,6 @@
             <th class="text-center" colspan="5">Total</th>
             <th class="text-right">Rp <?= number_format(array_sum($kasDebet));?></th>
         </tr>
-        <tr>
-            <th colspan="6" class="text-right"><i><?= ucwords(terbilang(array_sum($kasDebet)));?></i></th>
-        </tr>
   </tbody>
 </table>
 

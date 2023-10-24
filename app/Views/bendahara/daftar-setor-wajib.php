@@ -7,6 +7,8 @@
           <button type="submit" class="btn btn-sm btn-info btnsimpanbanyak">
             <i class="fas fa-plus"></i>&nbsp; Setor Simp. Wajib
           </button>
+          <a href="<?php echo base_url('');?>bendahara/dataSimpanan" class="btn btn-sm btn-warning">Kembali</a>
+
         </div>
       </div>
       <!-- /.card-header -->

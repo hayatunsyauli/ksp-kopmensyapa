@@ -43,6 +43,7 @@
                         <div class="mb-3 col-sm-6">
                             <label>Jenis Pinjaman</label>
                                 <input type="text" class="form-control" value="<?= $item['jenis_pinjaman'];?>" required readonly>
+                                <input type="hidden" name="id_jenis_pinjaman" value="<?= $item['id_jenis_pinjaman'];?>" required readonly>
                         </div>
                         <div class="mb-3 col-sm-6">
                             <label>Angsuran Ke</label><br>

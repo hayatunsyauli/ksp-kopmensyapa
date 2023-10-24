@@ -49,9 +49,9 @@
           }
          ?>
         <h5>Pinjaman</h5>
-        Pjm. Jangka Panjang : Rp <?= $jumlahPinjamanPj == null ? '0' : number_format(array_sum($ttlPinjamanPj),0);?><br>
-        Pjm. Jangka Pendek : Rp <?= $jumlahPinjamanPd == null ? '0' : number_format(array_sum($ttlPinjamanPd),0);?><br>
-        Pjm. BKD : Rp <?= $jumlahPinjamanBkd == null ? '0' : number_format(array_sum($ttlPinjamanBkd),0);?>
+        <?= $pinjamanPj['jenis_pinjaman'];?> : Rp <?= $jumlahPinjamanPj == null ? '0' : number_format(array_sum($ttlPinjamanPj),0);?><br>
+        <?= $pinjamanPd['jenis_pinjaman'];?> : Rp <?= $jumlahPinjamanPd == null ? '0' : number_format(array_sum($ttlPinjamanPd),0);?><br>
+        <?= $pinjamanBkd['jenis_pinjaman'];?> : Rp <?= $jumlahPinjamanBkd == null ? '0' : number_format(array_sum($ttlPinjamanBkd),0);?>
         
         <hr>
         <h5>Total : Rp <?= $jumlahPinjaman == null ? '0' : number_format(array_sum($ttlPinjaman),0);?></h3>

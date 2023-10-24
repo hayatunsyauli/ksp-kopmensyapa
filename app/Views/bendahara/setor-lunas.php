@@ -73,7 +73,7 @@
         
     <div class="modal fade" id="validasiSetor<?= $value['id_pinjaman'];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <form method="post" action="<?= base_url('');?>bendahara/prosesSetorLunas/<?= $value['id_pinjaman'];?>">
+        <form method="post" action="<?= base_url('bendahara/prosesSetorLunas/'.$value['id_pinjaman']);?>">
             <?= csrf_field();?>
             <div class="modal-content">
               <div class="modal-header bg-warning">
@@ -88,6 +88,7 @@
                     <input type="hidden" name="ket" value="Setor Lunas">
                     <input type="hidden" name="jml_byr_angsuran" value="<?= $value['jml_angsuran'];?>">
                     <input type="hidden" name="no_anggota" value="<?= $value['no_anggota'];?>">
+                    <input type="hidden" name="id_jenis_pinjaman" value="<?= $value['id_jenis_pinjaman'];?>">
                     <input type="hidden" name="id_pinjaman" value="<?= $value['id_pinjaman'];?>">
                 </div>
               <div class="modal-footer justify-content-between">

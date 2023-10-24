@@ -32,7 +32,7 @@
                     <th>ID Angsuran</th>
                     <th>ID Pinjaman</th>
                     <th>ID Petugas</th>
-                    <th>Tanggal</th>
+                    <th>Tanggal Setor</th>
                     <th>Jumlah</th>
                     <th>Aksi</th>
                 </tr>
@@ -47,7 +47,7 @@
                     <td><?= $jp['id_angsuran'];?></td>
                     <td><?= $jp['id_pinjaman'];?></td>
                     <td><?= $jp['id_petugas'];?></td>
-                    <td><?=date('d-m-Y', strtotime($jp['tgl_pinjam']));?></td>
+                    <td><?=date('d-m-Y', strtotime($jp['tgl_angsuran']));?></td>
                     <td class="text-right">Rp. <?= number_format($jp['angsuran_pembayaran']);?></td>
                     <td class="text-center">
                         <a href="<?= base_url('bendahara/cetakInvoiceAngsuran/'.$jp['id_angsuran']);?>" target="_blank" class="btn btn-xs btn-info" data-placement="bottom" title="Cetak"><i class="fas fa-inbox"></i></a>
